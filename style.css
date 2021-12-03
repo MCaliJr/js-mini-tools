@@ -37,8 +37,49 @@ body {
 .card-list {
   display: flex;
   padding: 3rem;
+  overflow-x: scroll;
+}
+
+.card-list::-webkit-scrollbar {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.card-list::-webkit-scrollbar-thumb {
+  background: #201c29;
+  border-radius: 0.6rem;
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+    inset -2px -2px -2px rgba(0, 0, 0, 0.25);
+}
+
+.card-list::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
 }
 
 .card {
   display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 24rem;
+  width: 15rem;
+  min-width: 14rem;
+  padding: 1.5rem;
+
+  border-radius: 1rem;
+  background: #17141d;
+  box-shadow: -1rem 0 3rem #000;
+
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-1rem);
+}
+
+.card:hover ~ .card {
+  transform: translateX(9rem);
+}
+
+.card:not(:first-child) {
+  margin-left: -9rem;
 }
