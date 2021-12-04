@@ -27,6 +27,14 @@ body {
   font-size: 3rem;
 }
 
+.title:hover {
+  background: linear-gradient(270deg, #0066ff, #eb075b);
+  text-shadow: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .card-area {
   flex: 6;
   display: flex;
@@ -82,4 +90,12 @@ body {
 
 .card:not(:first-child) {
   margin-left: -9rem;
+}
+
+.card-header h2:hover {
+  background: linear-gradient(90deg, #0066ff, #eb075b);
+  text-shadow: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
