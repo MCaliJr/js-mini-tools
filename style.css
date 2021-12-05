@@ -93,7 +93,7 @@ body {
 }
 
 .card-header h2:hover {
-  background: linear-gradient(90deg, #0066ff, #eb075b);
+  background: linear-gradient(90deg, #00b7ff, #eb075b);
   text-shadow: none;
   background-clip: text;
   -webkit-background-clip: text;
