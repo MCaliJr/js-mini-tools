@@ -92,6 +92,10 @@ body {
   margin-left: -9rem;
 }
 
+.card-header h2 {
+  font-family: "Corinthia", cursive;
+}
+
 .card-header h2:hover {
   background: linear-gradient(90deg, #00b7ff, #eb07a7);
   text-shadow: none;
